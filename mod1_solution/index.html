@@ -1,3 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>    <meta charset="utf-8">    <script src="./angular.min.js"></script>    <script src="./lunch.js"></script>    <style>body { font-size: 1.3em; }</style>    <title>Lunch</title>  </head>  <body ng-app="LunchApp">    <h1>Lunch</h1>    <div ng-controller="LunchController">      <div>        Lunch items:        <input type="text" ng-model="items" ng-list>      </div>   <br/>      <div>{{lunchMsg}}</div>   <br/>   <input type="button" value="Check If Too Much" ng-click="sayMessage()" />    </div>  </body></html>
+<head>    
+  <meta charset="utf-8">    
+  <script src="./angular.min.js"></script>    
+  <script src="./lunch.js"></script>    
+  <style>body { font-size: 1.3em; }</style>    
+  <title>Lunch 2</title>  
+</head>  
+  <body ng-app="LunchApp">    
+    <h1>Lunch</h1>    
+    <div ng-controller="LunchController">      
+      <div>        Lunch items:        <input type="text" ng-model="items" ng-list>      </div>   
+      <br/>      
+      <div>{{lunchMsg}}</div>   
+      <br/>   
+      <input type="button" value="Check If Too Much" ng-click="sayMessage()" />    
+    </div>  
+  </body>
+</html>
