@@ -1,0 +1,9 @@
+<!-- <h3>Title: {{ ddoFoundCtrl.myTitle }}</h3> -->
+<ol>
+  <li ng-repeat="item in ddoFoundCtrl.itemList">
+    {{ item.name }}, {{ item.short_name }}, {{ item.description }}
+    <button ng-click="ddoFoundCtrl.onRemove({index: $index});">Don't want this!</button>
+  </li>
+</ol>
+<br>
+<div class="warning" ng-if="ddoFoundCtrl.itemList.length === 0">Nothing found.</div>
