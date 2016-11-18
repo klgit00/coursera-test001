@@ -1,0 +1,24 @@
+<!--
+<br>printout<br>
+{{$ctrl.catList}}
+{{$ctrl.catList.length}}
+{{$ctrl.catList[0].name}}
+{{$ctrl.catList[0].short_name}}
+{{$ctrl.catList[1].name}}
+{{$ctrl.catList[1].short_name}}
+-->
+<ul>We have the following categories
+<!--
+  <li ng-repeat="aCategory in $ctrl.catList"
+      ui-sref="categoryList.itemDetail({index: $index})">
+-->	  
+  <li ng-repeat="aCategory in $ctrl.catList"
+      ui-sref="categoryList.itemDetail({catShortName: aCategory.short_name})"> 
+  
+    {{ aCategory.short_name }}, {{ aCategory.name }}, {{ aCategory.special_instructions }}
+  </li>
+</ul>
+
+<ui-view></ui-view>
+
+

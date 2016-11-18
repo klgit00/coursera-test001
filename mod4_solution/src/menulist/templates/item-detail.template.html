@@ -1,0 +1,12 @@
+<!--
+<div>Item name: {{ itemDetailCtrl.name }}</div>
+<div>Item quantity: {{ itemDetailCtrl.quantity }}</div>
+<div>Item description: {{ itemDetailCtrl.description }}</div>
+-->
+<h2>The selected category contains</h2>
+<ul
+  <li ng-repeat="item in itemDetailCtrl.itemList">
+    {{ item.name }}, {{ item.short_name }}, {{ item.description }}
+  </li>
+</ul>
+
